@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(250, 25%, 98%);
+  --foreground: hsl(23, 23%, 9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(23, 23%, 9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(23, 23%, 9%);
+  --primary: hsl(125, 70%, 15%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(214, 82%, 51%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(245, 24%, 96%);
+  --muted-foreground: hsl(220, 8%, 46%);
+  --accent: hsl(142, 100%, 26%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(4, 85%, 58%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(229, 22%, 90%);
+  --input: hsl(229, 22%, 90%);
+  --ring: hsl(217, 91%, 60%);
+  --chart-1: hsl(203.8863, 88.2845%, 53.1373%);
+  --chart-2: hsl(159.7826, 100%, 36.0784%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(180, 6.6667%, 97.0588%);
+  --sidebar-foreground: hsl(210, 25%, 7.8431%);
+  --sidebar-primary: hsl(203.8863, 88.2845%, 53.1373%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(211.5789, 51.3514%, 92.7451%);
+  --sidebar-accent-foreground: hsl(203.8863, 88.2845%, 53.1373%);
+  --sidebar-border: hsl(205.0000, 25.0000%, 90.5882%);
+  --sidebar-ring: hsl(202.8169, 89.1213%, 53.1373%);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --radius: 8px;
+  --shadow-2xs: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00), 0px 1px 2px -1px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --shadow: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00), 0px 1px 2px -1px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00), 0px 2px 4px -1px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00), 0px 4px 6px -1px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00), 0px 8px 10px -1px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(202.8169, 89.1213%, 53.1373%, 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(240, 10%, 6%);
+  --foreground: hsl(250, 25%, 98%);
+  --card: hsl(240, 8%, 10%);
+  --card-foreground: hsl(250, 25%, 85%);
+  --popover: hsl(240, 8%, 10%);
+  --popover-foreground: hsl(250, 25%, 98%);
+  --primary: hsl(142, 76%, 36%);
+  --primary-foreground: hsl(23, 23%, 9%);
+  --secondary: hsl(217, 91%, 60%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(240, 8%, 10%);
+  --muted-foreground: hsl(240, 5%, 64%);
+  --accent: hsl(142, 76%, 36%);
+  --accent-foreground: hsl(23, 23%, 9%);
+  --border: hsl(240, 6%, 16%);
+  --input: hsl(240, 6%, 18%);
+  --ring: hsl(217, 91%, 60%);
+  --sidebar: hsl(240, 8%, 10%);
+  --sidebar-foreground: hsl(250, 25%, 85%);
+  --sidebar-primary: hsl(202.8169, 89.1213%, 53.1373%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(205.7143, 70%, 7.8431%);
+  --sidebar-accent-foreground: hsl(203.7736, 87.6033%, 52.5490%);
+  --sidebar-border: hsl(205.7143, 15.7895%, 26.0784%);
+  --sidebar-ring: hsl(202.8169, 89.1213%, 53.1373%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom styles matching the design reference */
+.hero-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+}
+
+.trust-badge {
+  background: linear-gradient(135deg, hsl(var(--accent) / 0.1) 0%, hsl(var(--primary) / 0.1) 100%);
+  border: 1px solid hsl(var(--accent) / 0.2);
+}
+
+.form-step {
+  transition: all 0.3s ease-in-out;
+}
+
+.form-step.inactive {
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+  position: absolute;
+}
+
+.progress-step {
+  transition: all 0.3s ease;
+}
+
+.progress-step.completed {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.progress-step.active {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
