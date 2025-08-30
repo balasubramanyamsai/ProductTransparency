@@ -31,12 +31,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post("/api/products", async (req, res) => {
     try {
-      const validatedData = insertProductSchema.parse({
-        ...req.body,
-        userId: "demo-user", // In real app, get from auth
-        status: "draft"
-      });
+      const productData = {
+        name: req.body.name || "",
+        category: req.body.category || "",
+        userId: "demo-user",
+        status: "draft",
+        audience: req.body.audience || null,
+        description: req.body.description || null,
+        location: req.body.location || null,
+        certifications: req.body.certifications || null,
+        basicInfo: req.body.basicInfo || null,
+        aiResponses: req.body.aiResponses || null
+      };
       
+      const validatedData = insertProductSchema.parse(productData);
       const product = await storage.createProduct(validatedData);
       res.status(201).json(product);
     } catch (error) {

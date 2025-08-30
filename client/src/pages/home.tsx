@@ -2,17 +2,17 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  CheckCircle, 
-  Shield, 
-  FileText, 
-  Brain, 
-  BarChart3, 
-  Heart, 
-  Users, 
+import {
+  CheckCircle,
+  Shield,
+  FileText,
+  Brain,
+  BarChart3,
+  Heart,
+  Users,
   Award,
   Download,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
@@ -50,21 +50,28 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="hero-gradient py-24 px-4">
+      <section className="hero-gradient py-24 px-4 text-black">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" data-testid="hero-title">
+              <h1
+                className="text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight"
+                data-testid="hero-title"
+              >
                 Build Trust Through
                 <span className="text-accent"> Product Transparency</span>
               </h1>
-              <p className="text-xl text-white/90 mb-8 leading-relaxed" data-testid="hero-description">
-                Our AI-powered platform generates comprehensive transparency reports through intelligent questioning, 
-                helping consumers make informed, ethical, and health-conscious decisions.
+              <p
+                className="text-xl text-black/90 mb-8 leading-relaxed"
+                data-testid="hero-description"
+              >
+                Our AI-powered platform generates comprehensive transparency
+                reports through intelligent questioning, helping consumers make
+                informed, ethical, and health-conscious decisions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/submit">
-                  <Button 
+                  <Button
                     size="lg"
                     className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg text-lg px-8 py-4"
                     data-testid="button-submit-product"
@@ -72,11 +79,11 @@ export default function Home() {
                     Submit Your Product
                   </Button>
                 </Link>
-                <Button 
+                <Button
                   variant="outline"
                   size="lg"
                   onClick={handleDownloadSample}
-                  className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4"
+                  className="border-2 border-white text-black hover:bg-white hover:text-primary text-lg px-8 py-4"
                   data-testid="button-sample-report"
                 >
                   View Sample Report
@@ -116,10 +123,16 @@ export default function Home() {
                 <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-6 h-6 text-accent-foreground" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2" data-testid="trust-badge-ai-title">
+                <h3
+                  className="font-semibold text-lg mb-2"
+                  data-testid="trust-badge-ai-title"
+                >
                   AI-Powered Intelligence
                 </h3>
-                <p className="text-muted-foreground" data-testid="trust-badge-ai-description">
+                <p
+                  className="text-muted-foreground"
+                  data-testid="trust-badge-ai-description"
+                >
                   Smart follow-up questions adapt to your product type
                 </p>
               </CardContent>
@@ -130,10 +143,16 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2" data-testid="trust-badge-security-title">
+                <h3
+                  className="font-semibold text-lg mb-2"
+                  data-testid="trust-badge-security-title"
+                >
                   Secure & Private
                 </h3>
-                <p className="text-muted-foreground" data-testid="trust-badge-security-description">
+                <p
+                  className="text-muted-foreground"
+                  data-testid="trust-badge-security-description"
+                >
                   Enterprise-grade security for your product data
                 </p>
               </CardContent>
@@ -144,10 +163,16 @@ export default function Home() {
                 <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <FileText className="w-6 h-6 text-secondary-foreground" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2" data-testid="trust-badge-reports-title">
+                <h3
+                  className="font-semibold text-lg mb-2"
+                  data-testid="trust-badge-reports-title"
+                >
                   Professional Reports
                 </h3>
-                <p className="text-muted-foreground" data-testid="trust-badge-reports-description">
+                <p
+                  className="text-muted-foreground"
+                  data-testid="trust-badge-reports-description"
+                >
                   PDF transparency reports ready for distribution
                 </p>
               </CardContent>
@@ -160,8 +185,16 @@ export default function Home() {
       <section id="features" className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" data-testid="features-title">Platform Features</h2>
-            <p className="text-xl text-muted-foreground" data-testid="features-subtitle">
+            <h2
+              className="text-4xl font-bold mb-4"
+              data-testid="features-title"
+            >
+              Platform Features
+            </h2>
+            <p
+              className="text-xl text-muted-foreground"
+              data-testid="features-subtitle"
+            >
               Everything you need for comprehensive product transparency
             </p>
           </div>
@@ -172,11 +205,18 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Brain className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3" data-testid="feature-smart-questioning-title">
+                <h3
+                  className="text-xl font-semibold mb-3"
+                  data-testid="feature-smart-questioning-title"
+                >
                   Smart Questioning
                 </h3>
-                <p className="text-muted-foreground" data-testid="feature-smart-questioning-description">
-                  AI adapts questions based on product type, regulations, and previous answers for comprehensive data collection.
+                <p
+                  className="text-muted-foreground"
+                  data-testid="feature-smart-questioning-description"
+                >
+                  AI adapts questions based on product type, regulations, and
+                  previous answers for comprehensive data collection.
                 </p>
               </CardContent>
             </Card>
@@ -186,11 +226,18 @@ export default function Home() {
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart3 className="w-6 h-6 text-secondary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3" data-testid="feature-analytics-title">
+                <h3
+                  className="text-xl font-semibold mb-3"
+                  data-testid="feature-analytics-title"
+                >
                   Data Analytics
                 </h3>
-                <p className="text-muted-foreground" data-testid="feature-analytics-description">
-                  Track submission trends, identify gaps in transparency, and benchmark against industry standards.
+                <p
+                  className="text-muted-foreground"
+                  data-testid="feature-analytics-description"
+                >
+                  Track submission trends, identify gaps in transparency, and
+                  benchmark against industry standards.
                 </p>
               </CardContent>
             </Card>
@@ -200,11 +247,18 @@ export default function Home() {
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                   <Download className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3" data-testid="feature-pdf-reports-title">
+                <h3
+                  className="text-xl font-semibold mb-3"
+                  data-testid="feature-pdf-reports-title"
+                >
                   PDF Reports
                 </h3>
-                <p className="text-muted-foreground" data-testid="feature-pdf-reports-description">
-                  Professional transparency reports formatted for consumers, retailers, and regulatory compliance.
+                <p
+                  className="text-muted-foreground"
+                  data-testid="feature-pdf-reports-description"
+                >
+                  Professional transparency reports formatted for consumers,
+                  retailers, and regulatory compliance.
                 </p>
               </CardContent>
             </Card>
@@ -214,11 +268,18 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Heart className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3" data-testid="feature-health-first-title">
+                <h3
+                  className="text-xl font-semibold mb-3"
+                  data-testid="feature-health-first-title"
+                >
                   Health-First Focus
                 </h3>
-                <p className="text-muted-foreground" data-testid="feature-health-first-description">
-                  Prioritize health and safety information that matters most to conscious consumers.
+                <p
+                  className="text-muted-foreground"
+                  data-testid="feature-health-first-description"
+                >
+                  Prioritize health and safety information that matters most to
+                  conscious consumers.
                 </p>
               </CardContent>
             </Card>
@@ -228,11 +289,18 @@ export default function Home() {
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-secondary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3" data-testid="feature-collaboration-title">
+                <h3
+                  className="text-xl font-semibold mb-3"
+                  data-testid="feature-collaboration-title"
+                >
                   Team Collaboration
                 </h3>
-                <p className="text-muted-foreground" data-testid="feature-collaboration-description">
-                  Share reports with team members, track changes, and maintain version history.
+                <p
+                  className="text-muted-foreground"
+                  data-testid="feature-collaboration-description"
+                >
+                  Share reports with team members, track changes, and maintain
+                  version history.
                 </p>
               </CardContent>
             </Card>
@@ -242,11 +310,18 @@ export default function Home() {
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                   <Award className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3" data-testid="feature-compliance-title">
+                <h3
+                  className="text-xl font-semibold mb-3"
+                  data-testid="feature-compliance-title"
+                >
                   Compliance Ready
                 </h3>
-                <p className="text-muted-foreground" data-testid="feature-compliance-description">
-                  Reports formatted to meet regulatory requirements and industry transparency standards.
+                <p
+                  className="text-muted-foreground"
+                  data-testid="feature-compliance-description"
+                >
+                  Reports formatted to meet regulatory requirements and industry
+                  transparency standards.
                 </p>
               </CardContent>
             </Card>
@@ -258,28 +333,45 @@ export default function Home() {
       <section id="reports" className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" data-testid="report-preview-title">
+            <h2
+              className="text-4xl font-bold mb-4"
+              data-testid="report-preview-title"
+            >
               Sample Transparency Report
             </h2>
-            <p className="text-xl text-muted-foreground" data-testid="report-preview-subtitle">
-              See how your product information becomes a comprehensive transparency report
+            <p
+              className="text-xl text-muted-foreground"
+              data-testid="report-preview-subtitle"
+            >
+              See how your product information becomes a comprehensive
+              transparency report
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h3 className="text-2xl font-semibold mb-6" data-testid="report-whats-included-title">
+              <h3
+                className="text-2xl font-semibold mb-6"
+                data-testid="report-whats-included-title"
+              >
                 What's Included
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold" data-testid="report-feature-ingredients-title">
+                    <h4
+                      className="font-semibold"
+                      data-testid="report-feature-ingredients-title"
+                    >
                       Complete Ingredient Analysis
                     </h4>
-                    <p className="text-muted-foreground text-sm" data-testid="report-feature-ingredients-description">
-                      Detailed breakdown of all components, sourcing, and processing methods
+                    <p
+                      className="text-muted-foreground text-sm"
+                      data-testid="report-feature-ingredients-description"
+                    >
+                      Detailed breakdown of all components, sourcing, and
+                      processing methods
                     </p>
                   </div>
                 </div>
@@ -287,11 +379,18 @@ export default function Home() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold" data-testid="report-feature-supply-chain-title">
+                    <h4
+                      className="font-semibold"
+                      data-testid="report-feature-supply-chain-title"
+                    >
                       Supply Chain Transparency
                     </h4>
-                    <p className="text-muted-foreground text-sm" data-testid="report-feature-supply-chain-description">
-                      Origins, transportation, and sustainability practices throughout the chain
+                    <p
+                      className="text-muted-foreground text-sm"
+                      data-testid="report-feature-supply-chain-description"
+                    >
+                      Origins, transportation, and sustainability practices
+                      throughout the chain
                     </p>
                   </div>
                 </div>
@@ -299,11 +398,18 @@ export default function Home() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold" data-testid="report-feature-health-title">
+                    <h4
+                      className="font-semibold"
+                      data-testid="report-feature-health-title"
+                    >
                       Health & Safety Profile
                     </h4>
-                    <p className="text-muted-foreground text-sm" data-testid="report-feature-health-description">
-                      Allergen information, nutritional data, and safety certifications
+                    <p
+                      className="text-muted-foreground text-sm"
+                      data-testid="report-feature-health-description"
+                    >
+                      Allergen information, nutritional data, and safety
+                      certifications
                     </p>
                   </div>
                 </div>
@@ -311,17 +417,24 @@ export default function Home() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold" data-testid="report-feature-environmental-title">
+                    <h4
+                      className="font-semibold"
+                      data-testid="report-feature-environmental-title"
+                    >
                       Environmental Impact
                     </h4>
-                    <p className="text-muted-foreground text-sm" data-testid="report-feature-environmental-description">
-                      Carbon footprint, packaging sustainability, and environmental certifications
+                    <p
+                      className="text-muted-foreground text-sm"
+                      data-testid="report-feature-environmental-description"
+                    >
+                      Carbon footprint, packaging sustainability, and
+                      environmental certifications
                     </p>
                   </div>
                 </div>
               </div>
 
-              <Button 
+              <Button
                 onClick={handleDownloadSample}
                 className="mt-8 w-full bg-secondary text-secondary-foreground hover:bg-secondary/90"
                 data-testid="button-download-sample-report"
@@ -335,64 +448,100 @@ export default function Home() {
             <Card className="shadow-lg">
               <div className="bg-primary text-primary-foreground p-4">
                 <div className="flex items-center justify-between">
-                  <h4 className="font-semibold" data-testid="report-preview-header-title">
+                  <h4
+                    className="font-semibold"
+                    data-testid="report-preview-header-title"
+                  >
                     Product Transparency Report
                   </h4>
-                  <span className="text-sm opacity-90" data-testid="report-preview-header-generated">
+                  <span
+                    className="text-sm opacity-90"
+                    data-testid="report-preview-header-generated"
+                  >
                     Generated by Altibbe AI
                   </span>
                 </div>
               </div>
-              
+
               <CardContent className="p-6 space-y-6">
                 <div>
-                  <h5 className="font-semibold text-lg mb-2" data-testid="report-preview-product-name">
+                  <h5
+                    className="font-semibold text-lg mb-2"
+                    data-testid="report-preview-product-name"
+                  >
                     Healthy Kids Crackers
                   </h5>
-                  <p className="text-muted-foreground text-sm" data-testid="report-preview-generated-date">
+                  <p
+                    className="text-muted-foreground text-sm"
+                    data-testid="report-preview-generated-date"
+                  >
                     Report generated on March 15, 2024
                   </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <Card className="text-center p-4 bg-accent/10">
-                    <div className="text-2xl font-bold text-accent" data-testid="report-preview-transparency-score">
+                    <div
+                      className="text-2xl font-bold text-accent"
+                      data-testid="report-preview-transparency-score"
+                    >
                       92
                     </div>
-                    <div className="text-sm text-muted-foreground" data-testid="report-preview-transparency-label">
+                    <div
+                      className="text-sm text-muted-foreground"
+                      data-testid="report-preview-transparency-label"
+                    >
                       Transparency Score
                     </div>
                   </Card>
                   <Card className="text-center p-4 bg-primary/10">
-                    <div className="text-2xl font-bold text-primary" data-testid="report-preview-health-score">
+                    <div
+                      className="text-2xl font-bold text-primary"
+                      data-testid="report-preview-health-score"
+                    >
                       A+
                     </div>
-                    <div className="text-sm text-muted-foreground" data-testid="report-preview-health-label">
+                    <div
+                      className="text-sm text-muted-foreground"
+                      data-testid="report-preview-health-label"
+                    >
                       Health Rating
                     </div>
                   </Card>
                 </div>
 
                 <div>
-                  <h6 className="font-semibold mb-3" data-testid="report-preview-highlights-title">
+                  <h6
+                    className="font-semibold mb-3"
+                    data-testid="report-preview-highlights-title"
+                  >
                     Key Highlights
                   </h6>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-accent rounded-full"></div>
-                      <span className="text-sm" data-testid="report-preview-highlight-1">
+                      <span
+                        className="text-sm"
+                        data-testid="report-preview-highlight-1"
+                      >
                         100% Organic Certified Ingredients
                       </span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-accent rounded-full"></div>
-                      <span className="text-sm" data-testid="report-preview-highlight-2">
+                      <span
+                        className="text-sm"
+                        data-testid="report-preview-highlight-2"
+                      >
                         75% Locally Sourced Materials
                       </span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-accent rounded-full"></div>
-                      <span className="text-sm" data-testid="report-preview-highlight-3">
+                      <span
+                        className="text-sm"
+                        data-testid="report-preview-highlight-3"
+                      >
                         Zero Artificial Preservatives
                       </span>
                     </div>
@@ -404,7 +553,9 @@ export default function Home() {
                     <span data-testid="report-preview-report-id">
                       Report ID: <span className="font-mono">TPR-2024-001</span>
                     </span>
-                    <span data-testid="report-preview-page-count">12 pages</span>
+                    <span data-testid="report-preview-page-count">
+                      12 pages
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -417,8 +568,16 @@ export default function Home() {
       <section id="how-it-works" className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" data-testid="how-it-works-title">How It Works</h2>
-            <p className="text-xl text-muted-foreground" data-testid="how-it-works-subtitle">
+            <h2
+              className="text-4xl font-bold mb-4"
+              data-testid="how-it-works-title"
+            >
+              How It Works
+            </h2>
+            <p
+              className="text-xl text-muted-foreground"
+              data-testid="how-it-works-subtitle"
+            >
               Simple steps to comprehensive transparency
             </p>
           </div>
@@ -426,41 +585,96 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary-foreground" data-testid="step-1-number">1</span>
+                <span
+                  className="text-2xl font-bold text-primary-foreground"
+                  data-testid="step-1-number"
+                >
+                  1
+                </span>
               </div>
-              <h4 className="font-semibold text-lg mb-2" data-testid="step-1-title">Submit Basic Info</h4>
-              <p className="text-muted-foreground text-sm" data-testid="step-1-description">
+              <h4
+                className="font-semibold text-lg mb-2"
+                data-testid="step-1-title"
+              >
+                Submit Basic Info
+              </h4>
+              <p
+                className="text-muted-foreground text-sm"
+                data-testid="step-1-description"
+              >
                 Start with product name, category, and basic description
               </p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-secondary-foreground" data-testid="step-2-number">2</span>
+                <span
+                  className="text-2xl font-bold text-secondary-foreground"
+                  data-testid="step-2-number"
+                >
+                  2
+                </span>
               </div>
-              <h4 className="font-semibold text-lg mb-2" data-testid="step-2-title">AI Generates Questions</h4>
-              <p className="text-muted-foreground text-sm" data-testid="step-2-description">
-                Our AI creates personalized follow-up questions based on your product
+              <h4
+                className="font-semibold text-lg mb-2"
+                data-testid="step-2-title"
+              >
+                AI Generates Questions
+              </h4>
+              <p
+                className="text-muted-foreground text-sm"
+                data-testid="step-2-description"
+              >
+                Our AI creates personalized follow-up questions based on your
+                product
               </p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-accent-foreground" data-testid="step-3-number">3</span>
+                <span
+                  className="text-2xl font-bold text-accent-foreground"
+                  data-testid="step-3-number"
+                >
+                  3
+                </span>
               </div>
-              <h4 className="font-semibold text-lg mb-2" data-testid="step-3-title">Complete Assessment</h4>
-              <p className="text-muted-foreground text-sm" data-testid="step-3-description">
-                Answer intelligent questions about ingredients, sourcing, and manufacturing
+              <h4
+                className="font-semibold text-lg mb-2"
+                data-testid="step-3-title"
+              >
+                Complete Assessment
+              </h4>
+              <p
+                className="text-muted-foreground text-sm"
+                data-testid="step-3-description"
+              >
+                Answer intelligent questions about ingredients, sourcing, and
+                manufacturing
               </p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary-foreground" data-testid="step-4-number">4</span>
+                <span
+                  className="text-2xl font-bold text-primary-foreground"
+                  data-testid="step-4-number"
+                >
+                  4
+                </span>
               </div>
-              <h4 className="font-semibold text-lg mb-2" data-testid="step-4-title">Get Your Report</h4>
-              <p className="text-muted-foreground text-sm" data-testid="step-4-description">
-                Download professional PDF transparency report ready for distribution
+              <h4
+                className="font-semibold text-lg mb-2"
+                data-testid="step-4-title"
+              >
+                Get Your Report
+              </h4>
+              <p
+                className="text-muted-foreground text-sm"
+                data-testid="step-4-description"
+              >
+                Download professional PDF transparency report ready for
+                distribution
               </p>
             </div>
           </div>
@@ -474,12 +688,13 @@ export default function Home() {
             Ready to Build Consumer Trust?
           </h2>
           <p className="text-xl mb-8 opacity-90" data-testid="cta-description">
-            Join forward-thinking companies using transparency as a competitive advantage
+            Join forward-thinking companies using transparency as a competitive
+            advantage
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link href="/submit">
-              <Button 
+              <Button
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg text-lg px-8 py-4"
                 data-testid="cta-button-start-report"
@@ -488,7 +703,7 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Button 
+            <Button
               variant="outline"
               size="lg"
               className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4"
@@ -500,16 +715,46 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-1" data-testid="stat-products-analyzed">500+</div>
-              <div className="text-sm opacity-80" data-testid="stat-products-analyzed-label">Products Analyzed</div>
+              <div
+                className="text-3xl font-bold mb-1"
+                data-testid="stat-products-analyzed"
+              >
+                500+
+              </div>
+              <div
+                className="text-sm opacity-80"
+                data-testid="stat-products-analyzed-label"
+              >
+                Products Analyzed
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-1" data-testid="stat-accuracy-rate">95%</div>
-              <div className="text-sm opacity-80" data-testid="stat-accuracy-rate-label">Accuracy Rate</div>
+              <div
+                className="text-3xl font-bold mb-1"
+                data-testid="stat-accuracy-rate"
+              >
+                95%
+              </div>
+              <div
+                className="text-sm opacity-80"
+                data-testid="stat-accuracy-rate-label"
+              >
+                Accuracy Rate
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-1" data-testid="stat-turnaround-time">24hr</div>
-              <div className="text-sm opacity-80" data-testid="stat-turnaround-time-label">Report Turnaround</div>
+              <div
+                className="text-3xl font-bold mb-1"
+                data-testid="stat-turnaround-time"
+              >
+                24hr
+              </div>
+              <div
+                className="text-sm opacity-80"
+                data-testid="stat-turnaround-time-label"
+              >
+                Report Turnaround
+              </div>
             </div>
           </div>
         </div>
