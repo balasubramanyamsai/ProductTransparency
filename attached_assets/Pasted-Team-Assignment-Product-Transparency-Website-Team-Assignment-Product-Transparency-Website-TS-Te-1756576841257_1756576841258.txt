@@ -1,0 +1,95 @@
+Team Assignment: Product Transparency Website
+Team Assignment: Product Transparency Website
+TS
+Team Assignment: Product Transparency Website
+Altibbe | Hedamo Objective Build a full-stack web application that collects detailed information about products through dynamic, intelligent follow-up questions and generates a structured Product Transparency Report. The platform should be clean, intelligent, and user-friendly—supporting ethical, health-first decision-making.
+🧑‍💻 Full Stack Developer – Responsibilities
+1
+Tech Stack
+Frontend: React + TypeScript
+Backend: Node.js (Express or Nest.js)
+Database: PostgreSQL (MongoDB / Firebase optional)
+2
+Tasks
+Build a dynamic multi-step form with conditional logic.
+Create secure APIs to store and fetch product data.
+Generate PDF reports summarizing submitted product data.
+Design a robust database schema for products, questions, and reports.
+(Bonus) Add basic authentication for company-specific access.
+(Recommended): Use AI-powered developer tools like GitHub Copilot, Cursor, Replit, Tabnine to improve productivity and accuracy.
+🤖 AI/ML Developer – Responsibilities
+Goal: Make the product form intelligent using NLP or LLM-based logic.
+Dynamic Question Generation
+Generate follow-up questions dynamically using BERT, T5, GPT, or similar LLMs.
+Optional Scoring Logic
+(Optional) Develop scoring or product validation logic.
+Microservice Development
+Build a Flask or FastAPI microservice with the following endpoints:
+/generate-questions
+/transparency-score (optional)
+Collaboration & Tools
+Collaborate with full stack developers for API integration.
+(Recommended): Use LLM tools to streamline logic and backend integration.
+🎨 UI/UX Designer – Responsibilities
+Goal: Design a transparent, intuitive experience that builds user trust.
+Design Deliverables
+Create Figma designs for:
+Landing Page
+Multi-step Submission Form
+Report Preview & Download
+UX Requirements
+Add UX copy, tooltips, and visual feedback.
+Ensure mobile responsiveness and accessibility.
+Share Figma prototype + style guide with development team.
+📦 Final Deliverables
+Working full-stack web application
+AI-powered follow-up question engine
+PDF report generation based on product input
+Clean, accessible, responsive UI
+Folder structure:
+/frontend
+/backend
+/ai-service
+/design
+
+README.md must include:
+Setup instructions
+Feature list
+AI service documentation
+Sample product entry + example report
+(Bonus): A short reflection (~200 words) answering:
+How did you use AI tools in development?
+What principles guided your architecture, design, and product transparency logic?
+📩 Submission Instructions
+Submit all deliverables with the following:
+Deployed Application
+✅ Deployed Vercel (or alternative) App Link
+Code Repository
+✅ GitHub Repository Link
+Portfolio & Profile
+✅ Portfolio Link (if available)
+✅ LinkedIn Profile
+📧 Email to: people@altibbe.com
+📝 Subject Line: Submission – Product Transparency Assignment
+📊 Evaluation Criteria
+Criteria
+Weight
+Completion & Functionality
+30%
+Cross-role Collaboration
+20%
+Technical Quality (Code & Logic)
+20%
+AI Innovation & Smart Logic
+15%
+UI/UX Consistency & Usability
+15%
+🔍 Alignment with Altibbe's Mission
+Altibbe believes in building with Health, Wisdom, and Virtue. This assignment is more than just a tech challenge—it reflects our commitment to transparency, trust, and ethical systems. We encourage you to apply AI and full stack skills not only for functionality but for meaningful impact.
+Health
+Building systems that promote wellbeing and informed choices
+Wisdom
+Applying knowledge intelligently through thoughtful design
+Virtue
+Creating ethical systems that build trust and transparency
+Gamma
