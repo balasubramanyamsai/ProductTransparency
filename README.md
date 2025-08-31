@@ -30,7 +30,7 @@ A comprehensive web platform that uses AI to generate intelligent follow-up ques
 
 ### Setup
 
-1. **Download the project** from Replit (use "Export as ZIP" in your Replit workspace)
+1. **Download the project** from Git (use "Export as ZIP" in your GitHub workspace)
 
 2. **Install dependencies**:
    ```bash

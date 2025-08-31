@@ -1,6 +1,19 @@
-node_modules
-dist
-.DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
+$ignore = @(
+"node_modules/"
+"dist/"
+"build/"
+".env"
+".env.*"
+".local/"
+".replit/"
+".DS_Store"
+".vscode/"
+"*.log"
+"npm-debug.log"
+)
+
+if (-not (Test-Path .gitignore)) { $ignore | Out-File -Encoding utf8 .gitignore } else {
+  $existing = Get-Content .gitignore -ErrorAction SilentlyContinue
+  $toAdd = $ignore | Where-Object { $_ -and ($existing -notcontains $_) }
+  if ($toAdd) { $toAdd | Add-Content -Encoding utf8 .gitignore }
+}
